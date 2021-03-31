@@ -1,12 +1,9 @@
 import React from 'react';
-import Maps from './Components/JSX/Maps';
-import Navbar from './Components/JSX/Navbar'
+import Main from './Components/JSX/Main';
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Maps/>
-  
+      <Main/>
     </div>
 
   );

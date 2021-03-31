@@ -1,0 +1,155 @@
+#navbar  {
+    text-align: center ;
+    background-image: url("../Images/Navbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px;
+    font-family: 'Varela Round', sans-serif;
+    
+
+}
+#navbar h2{
+    margin: 0;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+
+#navbar input{
+    width: 400px;
+    height: 49px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: none;
+    padding-left: 18px;
+    box-shadow: rgba(54, 54, 54, 0.144) 0px 8px 24px;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(151, 150, 150);
+    opacity: 1; /* Firefox */
+}
+
+#navbar button{
+    background-color:black;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 13.2px;
+    padding-bottom: 12.7px;
+    padding-left: 18px;
+    padding-right: 18px;
+    cursor: pointer;
+    border:none;
+
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+
+.leaflet-container {
+    height: 66.5vh;
+    width: 100%;
+}
+
+.displaybox{
+    font-family: 'Varela Round', sans-serif;
+    z-index: 1000;
+    background-color: white;
+    position: absolute;
+    top:165px;
+    min-height:150px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.cols{
+    margin-left: 15px;
+}
+
+.bods{
+    border-right: 2px solid rgba(189, 187, 187, 0.26);
+
+}
+.cols p{
+    font-size: 12px;
+    font-weight:900;
+    color: grey;
+}
+
+.cols h4{
+    font-weight: 900;
+}
+
+
+
+@media only screen and (max-device-width: 500px) {
+
+    .displaybox{
+       
+        top:150px;
+        
+    }
+
+
+    #navbar input{
+        width:250px;
+        height: 40px;
+        padding-left: 9px;
+    
+    }
+
+    #navbar button{
+        padding: 9px;
+        padding-bottom: 9px;
+        padding-left: 15px;
+        padding-right: 10px;
+        
+    
+    }
+
+    #navbar h2{
+        margin: 0;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+    
+    .leaflet-container {
+        height: 90vh;
+        
+    }
+
+    .cols{
+        margin-left: 12px;
+        text-align: center;
+
+    }
+    
+   
+    .cols p{
+        font-size: 12px;
+    }
+    
+    .cols h4{
+        font-size: 23px;
+    }
+
+   .displaybox{
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+   }
+}
