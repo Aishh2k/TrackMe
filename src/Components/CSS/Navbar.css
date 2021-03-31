@@ -42,3 +42,8 @@
 textarea:focus, input:focus, button:focus{
     outline: none;
 }
+
+.leaflet-container {
+    height: 66.5vh;
+    width: 100%;
+  }

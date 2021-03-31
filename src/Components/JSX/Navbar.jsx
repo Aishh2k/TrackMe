@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../CSS/Navbar.css'
 import {  ReactComponent as Arrow } from '../Images/icon-arrow.svg';
 
-
 class Navbar extends Component {
     constructor(){
         super();
@@ -24,14 +23,15 @@ class Navbar extends Component {
 
     render() {
         return (
-            <div id="navbar">
+                <div id="navbar">
 
-                <h1>IP Address Tracker</h1>
-                <form  type="submit" onSubmit={ this.handleSubmit }>
-                    <input type="text" placeholder="Search for any IP address or domain" value={this.state.ipaddress} onChange={this.handleChange} />
-                    <button>< Arrow/></button> 
-                </form>
-            </div>
+                    <h1>IP Address Tracker</h1>
+                    <form  type="submit" onSubmit={ this.handleSubmit }>
+                        <input type="text" placeholder="Search for any IP address or domain" value={this.state.ipaddress} onChange={this.handleChange} />
+                        <button>< Arrow/></button> 
+                    </form>
+                </div>
+
         );
     }
 }
