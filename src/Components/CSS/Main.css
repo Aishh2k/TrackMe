@@ -131,7 +131,6 @@ textarea:focus, input:focus, button:focus{
     }
 
     .cols{
-        margin-left: 12px;
         text-align: center;
 
     }
@@ -145,11 +144,5 @@ textarea:focus, input:focus, button:focus{
         font-size: 23px;
     }
 
-   .displaybox{
-    margin: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    
-   }
+   
 }

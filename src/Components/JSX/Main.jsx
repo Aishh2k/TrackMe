@@ -5,6 +5,8 @@ import L from 'leaflet';
 import { Col, Row , Container } from 'react-bootstrap';
 import {  ReactComponent as Arrow } from '../Images/icon-arrow.svg';
 
+const publicIp = require('public-ip');
+
 
 
 const axios = require('axios');
@@ -21,7 +23,7 @@ class Main extends Component {
     constructor() {
         super()
         this.state = {
-          ipaddress: "8.8.8.8",
+          ipaddress: null,
           position: null,
           lat: null,
           lng: null,
@@ -34,6 +36,8 @@ class Main extends Component {
 
 
         this.getIP=this.getIP.bind(this)
+        this.getMyIP=this.getMyIP.bind(this)
+
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -50,7 +54,17 @@ class Main extends Component {
     }
 
     componentDidMount(){
+        this.getMyIP();
+    }
+
+    async  getMyIP() {
+        let result = await publicIp.v4();
+        this.setState({
+            ipaddress: result
+        })
+
         this.getIP();
+
     }
 
     async getIP() {
@@ -105,11 +119,10 @@ class Main extends Component {
                             <h4>UTC {this.state.time}</h4>
                         </Col>
 
-                        <Col md style={{marginRight:"10px"}} sm className="cols">
+                        <Col md style={{marginRight:"10px"}} className="cols">
                             <p>ISP</p>
                             <h4>{this.state.isp}</h4>
                         </Col>
-
                     </Row>
                 </Container>
 
