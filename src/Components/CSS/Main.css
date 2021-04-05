@@ -83,7 +83,7 @@ textarea:focus, input:focus, button:focus{
 }
 
 .cols{
-   margin-left: 15px;
+   margin-left: 20px;
 
 }
 
@@ -147,7 +147,8 @@ textarea:focus, input:focus, button:focus{
     }
 
     .cols{
-        padding: 15px;
+        text-align: center;
+        margin-left: 10px;
     }
 
     .cols p{
@@ -177,10 +178,6 @@ textarea:focus, input:focus, button:focus{
         margin-left: 50px;
         margin-right: 50px;
        
-    }
-
-    .cols{
-        text-align: center;
     }
 
     .cols p{
