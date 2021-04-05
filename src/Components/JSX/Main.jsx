@@ -12,7 +12,8 @@ const publicIp = require('public-ip');
 const axios = require('axios');
 
 var greenIcon = new L.Icon({
-    iconUrl: 'https://cdn1.bbcode0.com/uploads/2021/3/31/06432be53ebd8394fd366e41117a4032-full.png', 
+    iconUrl:'https://www.flaticon.com/svg/vstatic/svg/447/447031.svg?token=exp=1617655507~hmac=fcb78c1d1e64d16e6559806bdfdfd019',
+    // iconUrl: 'https://cdn1.bbcode0.com/uploads/2021/3/31/06432be53ebd8394fd366e41117a4032-full.png', 
     iconSize: [48, 54],
     iconAnchor: [12, 41],
 });
